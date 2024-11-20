@@ -690,6 +690,14 @@ video {
   background-image: url('../img.jpg');
 }
 
+.bg-\[url\(\'\.\.\/\/img\.jpg\'\)\] {
+  background-image: url('..//img.jpg');
+}
+
+.bg-\[url\(\'\.\.\/github-user-search-app-icons\/img\.jpg\'\)\] {
+  background-image: url('../github-user-search-app-icons/img.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }

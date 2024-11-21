@@ -1,19 +1,12 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevFinder</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <body class="bg-gray-100">
     <header class=" w-full h-16 flex items-center justify-center">
@@ -35,12 +28,13 @@
             <input type="search" name="" id="" placeholder="search by username" class="bg-white" >
         </div>
         <div class="bg-blue-500 w-16 rounded-lg text-white text-center flex items-center justify-center h-8">
-            <button>search</button>
+            <button id="searchButton">Search</button>
         </div>
     </div>
 
   </nav>
   <section class="card flex justify-center items-center">
+    <div class="w-[90%]"></div>
     <div class=" w-[90%] h-96 pt-5 bg-white shadow-xl shadow-gray-300 rounded-md">
         <div class="flex pl-4">
             <div class="img rounded-[50%] w-20 h-20 bg-[url('../github-user-search-app-icons/img.jpg')] bg-cover bg-center "></div>
@@ -100,7 +94,60 @@
         </div>
  </div>
   </section>
+<script src="app.js"></script>
+  
 </body>
-</html>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class=" w-full h-16 flex items-center justify-center">
+        <div class="w-[90%] flex justify-between">
+            <div >
+                <span class="font-bold ">Devfnder</span>
+            </div>
+            <div>
+                <button class="flex gap-4 items-center font-bold" id="dark-light"><img src="../github-user-search-app-icons/icon-moon.svg" alt="">Dark</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <nav class="flex justify-center items-center mb-3">
+        <div class="nav bg-white shadow-xl shadow-gray-300 w-[90%] flex items-center justify-around h-16 rounded-lg gap-5">
+            <div>
+                <img src="../github-user-search-app-icons/icon-search.svg" alt="">
+            </div>
+            <div>
+                <input type="search" name="" id="" placeholder="search by username" class="bg-white" >
+            </div>
+            <div class="bg-blue-500 w-16 rounded-lg text-white text-center flex items-center justify-center h-8">
+                <button id="searchButton">Search</button>
+            </div>
+        </div>
+    
+    </nav>
+
+    <!-- Profile Card -->
+    <section class="card flex justify-center items-center mt-10">
+        <!-- <div class="card w-[90%]  bg-white shadow-xl shadow-gray-300 rounded-md text-center p-5">
+            <p class="text-gray-400">Search for a GitHub user to display their profile</p>
+        </div> -->
+    </section>
+
+    <!-- JS File -->
+    <script src="app.js"></script>
+
 </body>
 </html>

@@ -554,6 +554,40 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -576,6 +610,10 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -620,14 +658,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-\[0\%\] {
-  width: 0%;
 }
 
 .flex-col {
@@ -688,21 +718,6 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
@@ -713,26 +728,33 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-red-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[url\(\'\.\.\/github-user-search-app-icons\/img\.jpg\'\)\] {
-  background-image: url('../github-user-search-app-icons/img.jpg');
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-5 {
@@ -802,9 +824,19 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-300 {
+.text-slate-100 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+  color: rgb(241 245 249 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
 .shadow-xl {
@@ -813,14 +845,48 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-gray-300 {
   --tw-shadow-color: #d1d5db;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-700 {
+  --tw-shadow-color: #374151;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-slate-700 {
+  --tw-shadow-color: #334155;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-slate-200 {
+  --tw-shadow-color: #e2e8f0;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-500 {
+  --tw-shadow-color: #6b7280;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-slate-300 {
+  --tw-shadow-color: #cbd5e1;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-600 {
+  --tw-shadow-color: #4b5563;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-slate-600 {
+  --tw-shadow-color: #475569;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -835,6 +901,10 @@ video {
 
   .md\:h-20 {
     height: 5rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
   }
 
   .md\:w-\[75\%\] {

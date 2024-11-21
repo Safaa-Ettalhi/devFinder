@@ -3,18 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
     <title>DevFinder</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+
 <body class="bg-gray-100">
     <header class=" w-full h-16 flex items-center justify-center">
         <div class="w-[90%] flex justify-between">
@@ -22,7 +15,7 @@
                 <span class="font-bold ">Devfnder</span>
             </div>
             <div>
-                <button class="flex gap-4 items-center font-bold"><img src="../github-user-search-app-icons/icon-moon.svg" alt="">Dark</button>
+                <button id="darknLightButton" class="flex gap-4 items-center font-bold"><img src="../github-user-search-app-icons/icon-moon.svg" alt="">Dark</button>
             </div>
         </div>
     </header>
@@ -35,13 +28,13 @@
             <input type="search" name="" id="" placeholder="search by username" class="bg-white" >
         </div>
         <div class="bg-blue-500 w-16 rounded-lg text-white text-center flex items-center justify-center h-8">
-            <button>search</button>
+            <button id="searchButton">search</button>
         </div>
     </div>
 
   </nav>
   <section class="card flex justify-center items-center">
-    <div class=" w-[90%] h-96 pt-5 bg-white shadow-xl shadow-gray-300 rounded-md">
+    <!-- <div class=" w-[90%] h-96 pt-5 bg-white shadow-xl shadow-gray-300 rounded-md">
         <div class="flex pl-4">
             <div class="img rounded-[50%] w-20 h-20 bg-[url('../github-user-search-app-icons/img.jpg')] bg-cover bg-center "></div>
             <div class="ml-4 mt-2">
@@ -98,8 +91,10 @@
                 </div>     
         </div>
         </div>
- </div>
-  </section>
+ </div> -->
+</section>
+
+<script src="app.js"></script>
 </body>
 </html>
 </body>

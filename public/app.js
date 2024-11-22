@@ -44,7 +44,7 @@ function updateProfileCard(data) {
             <div class="img rounded-[50%] w-20 h-20" style="background-image: url('${data.avatar_url}'); background-size: cover; background-position: center;"></div>
             <div class="ml-4 mt-2">
                 <h2 class="font-bold text-2xl text-gray-500">${data.name || 'Nom indisponible'}</h2>
-                <h3 class="text-blue-400 font-semibold">@${data.login}</h3>
+                <h3 class="text-blue-400 font-semibold"><a href="${data.html_url}">@${data.login}</a></h3>
                 <h4 class="text-gray-400 font-semibold md:hidden">Joined ${new Date(data.created_at).toLocaleDateString()}</h4>
                 <span class="bio text-gray-400 font-semibold hidden md:block">${data.bio || 'Pas de bio disponible.'}</span>
             </div>
@@ -151,11 +151,10 @@ function updateProfileCard(data) {
             </div>
             </div>
         </div>`
-    }
-
-
-            
+    }          
 }
+
+
 function darkTheme() {
     darkBtn.addEventListener('click', function () {
         isDarkMode = true;
@@ -232,7 +231,7 @@ function whiteTheme() {
         const stats = document.querySelectorAll('.stats');
         const container = document.querySelector('.stats-container');
         const navbar = document.querySelector('.nav5');
-       const searchBar = document.querySelector('input[type="search"]');
+        const searchBar = document.querySelector('input[type="search"]');
 
        if(searchBar) {
            searchBar.classList.remove('bg-slate-700');
